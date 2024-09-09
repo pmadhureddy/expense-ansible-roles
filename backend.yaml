@@ -1,4 +1,4 @@
-- name: Mysql configuration
+- name: Backend configuration
   hosts: backend
   become: yes #remote server
   roles:
