@@ -13,7 +13,7 @@
      tasks_from: app-pre-req
   - name: Copy Expense Conf
     ansible.builtin.template:
-     src: expense.conf
+     src: expense.conf.j2
      dest: /etc/nginx/default.d/expense.conf 
      remote_src: yes
   - name: Restart nginx
