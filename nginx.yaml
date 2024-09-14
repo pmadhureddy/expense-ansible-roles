@@ -1,6 +1,6 @@
 - name: nginx install and run
-  # hosts: Nginx
-  hosts: all
+  hosts: nginx
+  # hosts: all
   serial: 3
   become: yes #take sudo access
   vars_files:
