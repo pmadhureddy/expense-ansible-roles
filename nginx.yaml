@@ -2,6 +2,8 @@
   hosts: nginx
   #hosts: all
   become: yes #take sudo access
+  vars_files:
+  - /var/expense/credentials_mysql.yaml #ansible server
   # serial: 3
   tasks:
   - name: install nginx
