@@ -1,6 +1,5 @@
 - name: nginx install and run
-  hosts: local
-  connection: local
+  hosts: nginx
   #hosts: all
   become: yes #take sudo access
   vars_files:
